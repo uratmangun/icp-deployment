@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "counter_app_backend": {
+      "main": "src/counter_app_backend/main.mo",
+      "type": "motoko"
+    },
+    "counter_app_frontend": {
+      "dependencies": [
+        "counter_app_backend"
+      ],
+      "source": [
+        "src/counter_app_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "counter_app_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
